@@ -14,17 +14,6 @@ https://page-pulse-swart.vercel.app/
 **Backend API:**  
 https://page-pulse-backend-ns22.onrender.com
 
----
-
-## 📸 Preview
-
-> **Homepage**
-
-![Homepage Screenshot](screenshots/home.png)
-
-> *(Optional: Add screenshots by creating a `screenshots` folder in your repository.)*
-
----
 
 ## ✨ Features
 
