@@ -1,13 +1,21 @@
 const express = require("express");
+const cors = require("cors");
+
+const config = require("./config");
 
 const app = express();
 
-const PORT = 3000;
+app.use(cors());
+
+app.use(express.json());
 
 app.get("/", (req, res) => {
-    res.send("Welcome to Page Pulse 🚀");
+    res.json({
+        success: true,
+        message: "Welcome to Page Pulse API 🚀"
+    });
 });
 
-app.listen(PORT, () => {
-    console.log(`🚀 Server running at http://localhost:${PORT}`);
+app.listen(config.PORT, () => {
+    console.log(`🚀 Server running on http://localhost:${config.PORT}`);
 });
