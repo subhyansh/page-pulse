@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>🚀 Page Pulse | Website Audit Tool</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="background"></div>
+
+    <div class="container">
+
+        <header>
+
+            <h1>🚀 Page Pulse</h1>
+
+            <p class="subtitle">
+                Professional Website Audit & SEO Analyzer
+            </p>
+
+        </header>
+
+        <section class="card">
+
+            <label for="url">
+                Website URL
+            </label>
+
+            <input
+                id="url"
+                type="url"
+                placeholder="https://example.com">
+
+            <button id="analyzeBtn">
+                Analyze Website
+            </button>
+
+        </section>
+
+        <div id="loading" class="loading hidden">
+
+            <div class="spinner"></div>
+
+            <p>Analyzing website...</p>
+
+        </div>
+
+        <div id="error" class="error hidden"></div>
+
+        <section id="result" class="result hidden">
+
+            <h2>Audit Report</h2>
+
+            <div class="result-grid">
+
+                <div class="result-card">
+
+                    <h3>✅ HTTP Status</h3>
+
+                    <p id="status"></p>
+
+                </div>
+
+                <div class="result-card">
+
+                    <h3>⚡ Response Time</h3>
+
+                    <p id="responseTime"></p>
+
+                </div>
+
+                <div class="result-card">
+
+                    <h3>📄 Title</h3>
+
+                    <p id="title"></p>
+
+                </div>
+
+                <div class="result-card">
+
+                    <h3>📝 Meta Description</h3>
+
+                    <p id="metaDescription"></p>
+
+                </div>
+
+                <div class="result-card">
+
+                    <h3>🔤 H1 Count</h3>
+
+                    <p id="h1Count"></p>
+
+                </div>
+
+                <div class="result-card">
+
+                    <h3>🖼 Images Missing Alt</h3>
+
+                    <p id="imagesWithoutAlt"></p>
+
+                </div>
+
+                <div class="result-card">
+
+                    <h3>📚 Word Count</h3>
+
+                    <p id="wordCount"></p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer>
+
+            Built for
+
+            <a
+                href="https://digitalheroesco.com"
+                target="_blank">
+
+                Digital Heroes Training Task
+
+            </a>
+
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
