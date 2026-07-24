@@ -8,15 +8,18 @@ const auditWebsite = async (req, res) => {
 
         const result = await analyzeWebsite(url);
 
-        res.json(result);
+        res.status(200).json(result);
 
     }
 
     catch (error) {
 
-        res.status(500).json({
+        res.status(400).json({
+
             success: false,
+
             message: error.message
+
         });
 
     }
