@@ -30,7 +30,7 @@ async function analyzeWebsite() {
     try {
 
         // ⚠️ Change this URL after deployment
-        const response = await fetch("http://localhost:3000/api/audit", {
+        const response = await fetch("https://page-pulse-backend-ns22.onrender.com/api/audit", {
 
             method: "POST",
 
